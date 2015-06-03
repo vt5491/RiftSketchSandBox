@@ -1,0 +1,40 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-size: 10px;
+}
+
+textarea {
+  /* height: 200px; */
+  height: 200px; 
+  width: 400px;
+  font-family: Inconsolata, Consolas, monospace;
+  font-size: 11pt;
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+  /* vt add */
+  /* note: these are ignored as far as I can tell.  Have to set in the code */
+  rows: 8;
+  cols: 40;
+  /*vt end */
+}
+
+#monitor {
+  width: 0px;
+  clip: rect(0, 400px, 215px, 0);
+  opacity: 0.5;
+}
+
+.modal {
+  display: block;
+  font-size: 12pt;
+}
